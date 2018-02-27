@@ -1,0 +1,102 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+	background: url(../img/lines-bg.png) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	background-color: #323d50;
+	animation: example 10s ease infinite;
+}
+.main-info {
+	padding-top: 50px;
+}
+.cards {
+	padding: 100px 0;
+}
+.card-block {
+	background: #fff;
+	border-radius: 8px;
+	padding: 1px 15px 10px;
+	-webkit-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	-webkit-box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3),
+						0 0 15px rgba(0, 0, 0, 0.06);
+	box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 
+				0 0 15px rgba(0, 0, 0, 0.06);
+	-webkit-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+.card-block h3 {
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.card-block p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+.card-block h3, .card-block p {
+	text-align: center;
+}
+.card-block.green {
+	border-top: 3px solid #36D194;
+}
+.card-block.blue {
+	border-top: 3px solid #24CCFC;
+}
+.card-block.yellow {
+	border-top: 3px solid #FBCA31;
+}
+.card-block.red {
+	border-top: 3px solid #FF2C18;
+}
+.btn.btn-primary {
+	background: #0099ED;
+	border: 0;
+	border-radius: 10px;
+	width: 100%;
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	padding: 15px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3),
+						0 0 15px rgba(0, 0, 0, 0.06);
+	box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 
+				0 0 15px rgba(0, 0, 0, 0.06);
+}
+.btn.btn-primary:hover {
+	background: #24CCFC;
+	-webkit-box-shadow: 0 30px 20px -20px rgba(0, 0, 0, 0.3),
+						0 0 20px rgba(0, 0, 0, 0.06);
+	box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.3), 
+				0 0 15px rgba(0, 0, 0, 0.06);
+	-webkit-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+}
+.card-block img, .main-info img {
+	display: block;
+	margin: auto;
+	padding-top: 15px;
+}
+.main-info img {
+	height: 70px;
+}
+
+@media only screen and (max-width: 991px) {
+	.card-block {
+		margin-bottom: 20px;
+	}
+}
+
+@keyframes example {
+    0%   {background-color: #323D50;}
+    25%  {background-color: #323D7C;}
+    50%  {background-color: #2B3141;}
+    75%   {background-color: #325378}
+    100%   {background-color: #323D50;}
+}
